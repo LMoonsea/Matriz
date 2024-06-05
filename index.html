@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substituir Linha por Zeros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .matrix-input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Substituir Linha por Zeros</h1>
+
+    <div>
+        <label for="matriz">Matriz (use ';' para separar linhas e ',' para separar valores):</label><br>
+        <textarea id="matriz" rows="5" cols="30">1,2,3;4,5,6;7,8,9</textarea>
+    </div>
+
+    <div>
+        <label for="linha">Número da linha a substituir por zeros:</label><br>
+        <input type="number" id="linha" min="0">
+    </div>
+
+    <button onclick="substituirLinha()">Substituir Linha</button>
+
+    <h2>Matriz Resultante</h2>
+    <pre id="resultado"></pre>
+
+    <!-- Inclui o arquivo main.js -->
+    <script src="index.js"></script>
+</body>
+
+</html>
