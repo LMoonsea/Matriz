@@ -8,10 +8,58 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 50px;
         }
-        .matrix-input {
-            margin-bottom: 10px;
+
+        h1 {
+            color: #570d94;
+        }
+
+        .matrix-input,
+        .line-input {
+            margin: 20px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        textarea,
+        input[type="number"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #570d94;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #da710f;
+        }
+
+        pre {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
         }
     </style>
 </head>
@@ -19,12 +67,12 @@
 <body>
     <h1>Substituir Linha por Zeros</h1>
 
-    <div>
+    <div class="matrix-input">
         <label for="matriz">Matriz (use ';' para separar linhas e ',' para separar valores):</label><br>
         <textarea id="matriz" rows="5" cols="30">1,2,3;4,5,6;7,8,9</textarea>
     </div>
 
-    <div>
+    <div class="line-input">
         <label for="linha">Número da linha a substituir por zeros:</label><br>
         <input type="number" id="linha" min="0">
     </div>
